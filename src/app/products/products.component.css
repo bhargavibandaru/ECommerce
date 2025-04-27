@@ -1,0 +1,53 @@
+ body{
+    padding-top: 100px;
+ }
+ 
+ .card{
+    border-radius: 5px; 
+    padding: 10px; 
+    background-color: #FCF2F8;
+    transition: box-shadow  ; 
+}
+.card:hover{
+    box-shadow: 0 0 11px 	#55c5f5;
+    
+}
+.productName{
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+   margin-top: 10px;
+   
+}
+.productPrice{
+    color: red;
+    font-size: 25px; 
+    margin-left: auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.Cartbtn{
+    background-color: rgb(245, 245, 182);
+}
+.info-btn{
+    background-color:#c6e1f4 ;
+}
+.info-btn,.Cartbtn{
+  
+   font-size: 20px;
+   /* background-color: #c6e1f4; */
+   border-radius: 3px;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+  
+}   
+.Cartbtn:hover,.info-btn:hover{ 
+    background-color: white;
+}
+.image{
+    
+    transition: transform 0.3s ease-in;
+}
+
+.image:hover{
+    transform: scale(1.1);
+}

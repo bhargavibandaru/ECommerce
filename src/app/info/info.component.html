@@ -1,0 +1,53 @@
+
+<body>
+    <!-- <p class="itemName">{{itemDetails.name}}</p>
+
+    <div class="container">
+       <div>
+        <img [src]="itemDetails.image" alt="" class="infoImage">
+        <p class="infoPrice">{{itemDetails.price}}</p>
+
+       </div>
+
+        <div class="description">
+
+          
+           
+            <p class="desc"> {{ fullDescription ? itemDetails.description : (itemDetails.description | slice:0:150) }}</p>
+        
+            <button *ngIf="itemDetails.description.length > 150" (click)="showDescription()" style="border-radius: 10px;border-color: rgb(231, 234, 237); background-color:  #000;; margin-left: 20px; color: white; font-family:'Times New Roman', Times, serif; ">
+                {{ fullDescription ? 'see less' : '...' }}
+            </button>
+          
+        </div>
+        
+       
+    </div>
+    <button class="infoCart">Add To Cart</button> -->
+
+
+   
+
+    <div class="container1">
+        <p class="itemName">{{itemDetails.name}}</p>
+
+        <div class="container">
+            <img [src]="itemDetails.image" alt="" class="infoImage">
+
+            <div class="description">
+
+                <p class="desc">{{itemDetails.description}}</p>
+
+                <div style="display: flex; margin-top: 20px; justify-content: space-between;">
+                    <p class="infoPrice">{{itemDetails.price}}</p>
+                    <button class="infoCart" (click)="goToCart(itemDetails.ItemId)">Add To Cart</button>
+                </div>
+              
+            </div>
+
+        </div>
+        
+    </div>
+
+
+</body>

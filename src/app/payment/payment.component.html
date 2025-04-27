@@ -1,0 +1,51 @@
+<body>
+    <h3 style="text-align: center;">Credit Card Payment</h3> <br>
+   <form action="" style="margin-left: 35%;">
+    <label for="" class="creditLabels">Credit card Number :</label>
+    <input  type="tel" inputmode="numeric" name="" id="" style="margin-left:10px;" placeholder="0000 0000 0000 0000" pattern="[0-9\s]{13,19}" maxlength="19">
+    <br>
+    <br>
+    <label for="" class="creditLabels">Expiry Date :</label>
+    <input type="date" name="" id="" style="margin-left:80px;">
+    <br>
+    <br>
+    <label for="" class="creditLabels">CVC :</label>
+    <input type="text" name="" id="" style="margin-left:142px;">
+ </form>
+ <br>
+ 
+ <button style="margin-left: 50%;" type="button" class="btn btn-primary" (onclick)="paymentStatus()" data-bs-toggle="modal" data-bs-target="#exampleModal" >Proceed</button>
+
+
+  
+  <!-- Modal -->
+  <div *ngIf="paymentStatus()" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Payment Success</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p style="font-size: 20px;">Order confirmed !</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="!paymentStatus()" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Payment Failed !</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p  style="font-size: 20px;">Please Try Again !</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>

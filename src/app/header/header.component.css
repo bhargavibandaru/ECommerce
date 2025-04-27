@@ -1,0 +1,51 @@
+
+  .navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000; 
+  }
+
+.Home,.Login,.cart{
+    text-decoration: none;
+    color: 	white;
+    margin-right: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: color;
+}
+
+.Home:hover,.Login:hover,.cart:hover{
+    color:rgb(12, 227, 243)
+}
+
+.custom-toggler {
+    border: 1px solid black;
+    background-color: transparent;
+  }
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+.navbar-brand{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;  
+    transition: color;
+}
+
+.navbar-brand:hover{
+    color: rgb(0, 255, 255);
+}
+
+.logo{
+    width: 70px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.logo:hover {
+    transform: rotate(10deg);
+    
+}
+

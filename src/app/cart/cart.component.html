@@ -1,0 +1,39 @@
+<body>
+   <button  *ngIf="Items" (click)="delete()" style="margin-left: 48%; background-color: white; border: none;"> <i class="fa-solid fa-trash" style="font-size: 30px;"></i></button>
+
+  
+    <div *ngIf="Items" class="container">
+
+        <div class="Titles">
+            <p>Image</p>
+            <p>Name</p>
+            <p>Price</p> 
+        </div>
+    
+        <div style="display: flex;gap: 80px;">
+            <img class="image" [src]="itemDetails.image" alt="">
+            <p class="itemName">{{itemDetails.name}}</p>
+    
+            <p class="price">{{itemDetails.price}}</p>
+
+        </div>
+    
+        <p class="total">Total :{{itemDetails.price }}</p>
+ 
+    </div>
+
+    <div *ngIf="noItems" style="text-align: center;">
+        <p style="font-size: 30px; padding-top: 10px; font-style: italic;">Your Cart is empty..</p>
+        <button [routerLink]="['/products']" type="button" style=" background-color:#e7fefc;font-size: 25px; border-radius: 5px;" >Add Items</button>
+         
+    </div>
+
+    <!-- Button to navigate to payment page -->
+    <div style="text-align: center;">
+    <button *ngIf="Items" [routerLink]="['/payment']"  type="button" class="btn btn-primary" >
+        Pay Now
+        </button>
+    </div>
+  
+
+</body>
