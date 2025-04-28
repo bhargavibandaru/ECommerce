@@ -9,15 +9,19 @@ import { Component } from '@angular/core';
 })
 export class PaymentComponent {
 
-  randomNumber : number=0;
+  // randomNumber : number=0;
 
   paymentStatus()
   {
+  
     const min=1;
     const max=50;
-    this.randomNumber = Math.floor(Math.random() * (max-min +1)) + min;
+    let randValue ;
+    randValue = Math.floor(Math.random() * (max-min +1)) + min;
+    console.log(randValue);
 
-    if(this.randomNumber % 2==0)
+
+    if(randValue % 2==0)
     {
       return true;
     }
@@ -25,6 +29,7 @@ export class PaymentComponent {
     {
       return false;
     }
+
   }
 
   
